@@ -7,8 +7,7 @@ app.use(express.json())
 
 const PORT = process.env.PORT || 3000;
 
-//mongoose.connect('mongodb+srv://user-food1:<password>@cluster0.pkl7diq.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
-//
+
 mongoose.connect('mongodb+srv://user-food1:user1234@cluster0.pkl7diq.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -27,7 +26,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/status", async (request, response) => {
-  const dataFromDb = await YourModel.find();
+  
   const status = {
     "Status": "Running"
   }
@@ -46,7 +45,7 @@ app.get('/categories', async (req, res) => {
   } 
 });
 
-// POST endpoint for creating a new category
+
 /*
 app.post('/categories', async (req, res) => {
   try {
@@ -61,7 +60,7 @@ app.post('/categories', async (req, res) => {
 });
 */
 
-// POST endpoint for creating a new meal
+
 app.post('/meals', async (req, res) => {
   try {
     const newMeal = new Meal(req.body);
