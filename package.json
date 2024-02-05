@@ -1,0 +1,22 @@
+{
+  "name": "flutter-foods",
+  "version": "1.0.0",
+  "description": "dla;",
+  "main": "app.js",
+  "scripts": {
+    "test": "runn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "--"
+  },
+  "keywords": [
+    "--"
+  ],
+  "author": "dechu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
+}
